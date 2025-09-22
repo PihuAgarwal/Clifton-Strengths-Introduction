@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pihu Agarwal | F·R·I·E·N·D·S Themed Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+    
+    @property --a{
+      syntax: '<angle>';
+      inherits: true;
+      initial-value: 0deg;
+    }
+    @property --p {
+      syntax: '<percentage>';
+      inherits: true;
+      initial-value: 0%;
+    }
+    @property --c1 {
+      syntax: '<color>';
+      inherits: true;
+      initial-value: #000;
+    }
+    @property --c2 {
+      syntax: '<color>';
+      inherits: true;
+      initial-value: #000;
+    }
+
+    html {
+      --s: 80px;
+      --_g: #0000, var(--c1) 2deg calc(var(--a) - 2deg),#0000 var(--a);
+      background: 
+        conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc(-45deg  - var(--a)/2) at top    var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc( 45deg  - var(--a)/2) at top    var(--p) right var(--p),var(--_g)),
+        conic-gradient(from calc( 45deg  - var(--a)/2) at top    var(--p) right var(--p),var(--_g)),
+        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc(-135deg - var(--a)/2) at bottom var(--p) left  var(--p),var(--_g)),
+        conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g)),
+        conic-gradient(from calc( 135deg - var(--a)/2) at bottom var(--p) right var(--p),var(--_g))
+        var(--c2);
+      background-size: calc(2*var(--s)) calc(2*var(--s));
+      animation: m 2s infinite alternate linear;
+    }
+
+    @keyframes m {
+      0%,15% {
+        --a: 135deg;
+        --p: 20%;
+        --c1: #f297de;
+        --c2: #FAD089;
+        background-position: 0 0,var(--s) var(--s);
+      }
+      45%,50% {
+        --a: 90deg;
+        --p: 25%;
+        --c1: #f297de;
+        --c2: #FAD089;
+        background-position: 0 0,var(--s) var(--s);
+      }
+      50.01%,55% {
+        --a: 90deg;
+        --p: 25%;
+        --c2: #f297de;
+        --c1: #FAD089;
+        background-position: var(--s) 0,0 var(--s);
+      }
+      85%,100% {
+        --a: 135deg;
+        --p: 20%;
+        --c2: #f297de;
+        --c1: #FAD089;
+        background-position: var(--s) 0,0 var(--s);
+      }
+    }
+    
+    body {
+      font-family: "Kalam", cursive;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    header {
+      text-align: center;
+      padding: 1rem;
+      background: transparent;
+    }
+
+    header h1 {
+      font-family: "Caveat", cursive;
+      font-size: 3rem;
+      color: #FFD700; /* yellow frame */
+      letter-spacing: 5px;
+    }
+
+    header h1 span.dot {
+      color: #FF4500;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(56, 1, 51, 0.5);
+      border-radius: 12px;
+      position: relative;
+    }
+
+    h2 {
+      font-family: "Caveat", cursive;
+      color: #FFD700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    img.friends-photo {
+      width: 200px;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      margin: 1rem auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    img.friends-photo:hover {
+      transform: rotate(-5deg) scale(1.05);
+    }
+
+    .strength-box {
+      background: rgba(255, 215, 0, 0.1);
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 0.5rem;
+      flex: 1;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .strength-box:hover {
+      background: rgba(255, 215, 0, 0.2);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    }
+
+
+    .strengths-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .strength-title {
+      color: #FFD700;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    .intro-image {
+      flex-shrink: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="friends_the_one_where_you_meet_your_ra.png" alt="Friends themed header" style="width: 50%; height: 50%; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+  <p>Pihu Agarwal | Robinson Hall RA</p>
+</header>
+
+<section id="intro">
+  <h2>Introduction</h2>
+  <div class="intro-container">
+    <div class="intro-text">
+      <p>Hey there! I’m Pihu Agarwal, a Computer Science major, RA in Robinson Hall, and certified sitcom binger (Friends is my comfort show, obviously). Even though I’m more of an introvert, I love helping people feel at home, which is exactly what being an RA lets me do. Sometimes it’s the quiet listeners who create the coziest spaces.
+
+College, to me, is more than just assignments and exams. It’s about all the little moments of growth outside the classroom. As an RA, that means balancing challenges and support (like Sanford’s theory), whether it’s calming down a roommate squabble or cheering someone through homesickness.
+
+When I’m not on RA duty or coding away, you’ll probably catch me building Legos, dancing, or curled up with a good book. Basically, I like to keep my life equal parts creative, nerdy, and fun.</p>
+      
+    </div>
+    <div class="intro-image">
+      <img src="pihu dress.jpg" alt="Pihu photo" class="friends-photo">
+    </div>
+  </div>
+</section>
+
+<section id="strengths">
+  <h2>Clifton Strengths</h2>
+  <div class="strengths-container">
+    <div class="strength-box">
+      <div class="strength-title">1. Harmony</div>
+      <p>I help others find common ground through practical solutions.</p>
+    </div>
+    <div class="strength-box">
+      <div class="strength-title">2. Intellection</div>
+      <p>I think deeply. I think often.</p>
+    </div>
+    <div class="strength-box">
+      <div class="strength-title">3. Analytical</div>
+      <p>I use my logical, objective approach to make important decisions.</p>
+    </div>
+    <div class="strength-box">
+      <div class="strength-title">4. Consistency</div>
+      <p>I create fair systems to establish and build trust. </p>
+    </div>
+    <div class="strength-box">
+      <div class="strength-title">5. Adaptability</div>
+      <p>I react immediately, and be a positive force for change.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="self-understanding">
+  <h2>How my themes relate to how I understand myself</h2>
+  <div class="intro-container">
+    <div class="intro-text">
+      <p><strong>Harmony:</strong> I see myself as someone who naturally seeks peace and common ground, even if it means putting aside my own strong opinions.</p>
+      <p><strong>Intellection:</strong> I know I'm energized by thinking deeply and taking time to process ideas before speaking.</p>
+      <p><strong>Analytical:</strong> I often question the "why" behind things and rarely accept surface-level answers.</p>
+      <p><strong>Consistency:</strong> I thrive on routines and fairness. I feel most comfortable when expectations are clear and everyone is treated equally.</p>
+      <p><strong>Adaptability:</strong> I work best under pressure, preferring to respond to situations as they come rather than over-planning.</p>
+    </div>
+    <div class="intro-image">
+      <img src="pihu metaquest.jpeg" alt="Pihu with MetaQuest" class="friends-photo">
+      
+    </div>
+  </div>
+</section>
+
+<section id="relate-others">
+  <h2>How my themes help me relate to others</h2>
+  <div class="intro-container">
+    <div class="intro-text">
+      <p><strong>Harmony:</strong> I create spaces where people feel comfortable sharing their views.</p>
+      <p><strong>Intellection:</strong> I listen carefully and ask questions that help others think more deeply.</p>
+      <p><strong>Analytical:</strong> I help groups see different sides of a problem.</p>
+      <p><strong>Consistency:</strong> I make sure everyone has equal opportunities to contribute.</p>
+      <p><strong>Adaptability:</strong> I stay calm during changes, which helps others feel at ease.</p>
+    </div>
+    <div class="intro-image">
+      <img src="pihu skydive.jpg" alt="Pihu skydiving" class="friends-photo">
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <h2>Benefits</h2>
+  <p>During a heated call about noise complaints, my Harmony helped me see what everyone had in common, wanting a comfortable living environment. My Analytical nature led me to ask questions that helped residents notice new perspectives they hadn't considered. Using Intellection, I listened deeply and asked follow-up questions that led to a common ground. My Consistency ensured everyone got equal speaking time and fair treatment. When the discussion took unexpected turns with the residents yelling at each other, my Adaptability helped me go with the flow and adjust the meeting structure. The result was a roommate agreement that addressed everyone's concerns while building stronger relationships between residents.</p>
+</section>
+
+<section id="challenges">
+  <h2>Challenges</h2>
+  <p>On my first on-call shift, I found a drunk resident passed out in the bathroom with vomit everywhere. My Analytical side immediately wanted all the facts before acting, while Intellection made me overthink every decision rather than responding quickly. Harmony prevented me from "creating a scene," and Consistency had me worried about fair treatment rather than immediate safety. My Adaptability kept adjusting responses instead of following protocol. Fortunately, I overcame these paralysis moments by relying on my co-RA by using Harmony who helped me focus. We called campus police and the coordinator on call. The resident received proper medical attention, and everyone had a safe night.This taught me to not overthink and use my strengths to my advantage.</p>
+</section>
+
+
+
+
+</body>
+</html>
