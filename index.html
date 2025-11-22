@@ -181,6 +181,88 @@
       flex-shrink: 0;
     }
 
+    .skill-box {
+      background: rgba(255, 215, 0, 0.1);
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 0.5rem;
+      flex: 1;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-box:hover {
+      background: rgba(255, 215, 0, 0.2);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .skill-box:hover .skill-details {
+      display: block;
+    }
+
+    .skill-details {
+      display: none;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 215, 0, 0.3);
+    }
+
+    .skill-details ul {
+      margin: 0.5rem 0;
+      padding-left: 1.5rem;
+    }
+
+    .skill-details li {
+      margin: 0.5rem 0;
+    }
+
+    .resource-box {
+      background: rgba(255, 215, 0, 0.1);
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 0.5rem;
+      flex: 1;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .resource-box:hover {
+      background: rgba(255, 215, 0, 0.2);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .resource-title {
+      color: #FFD700;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .resource-link {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+
+    .resource-link:hover {
+      color: #FFA500;
+    }
+
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #FFA500;
+      text-decoration: underline;
+    }
 
   </style>
 </head>
@@ -291,6 +373,91 @@ When I’m not on RA duty or coding away, you’ll probably catch me building Le
 <section id="challenges">
   <h2>Challenges</h2>
   <p>On my first on-call shift, I found a drunk resident passed out in the bathroom. My Analytical side immediately wanted all the facts before acting, while Intellection made me overthink every decision rather than responding quickly. Harmony prevented me from "creating a scene," and Consistency had me worried about fair treatment rather than immediate safety. My Adaptability kept adjusting responses instead of following protocol. Fortunately, I overcame these paralysis moments by relying on my co-RA by using Harmony who helped me focus. We called campus police and the coordinator on call. The resident received proper medical attention, and everyone had a safe night.This taught me to not overthink and use my strengths to my advantage.</p>
+</section>
+
+<section id="resources">
+  <h2>Resources</h2>
+  <div class="strengths-container">
+    <div class="resource-box">
+      <div class="resource-title">1) Counseling and Psychological Services (CAPS) (CONFIDENTIAL)</div>
+      <p>Crisis, consultation, and counseling services</p>
+      <p><a href="https://studentaffairs.psu.edu/counseling" target="_blank" class="resource-link">https://studentaffairs.psu.edu/counseling</a></p>
+      <p>(814) 863-0395</p>
+      <p>501 Student Health Center</p>
+    </div>
+    <div class="resource-box">
+      <div class="resource-title">2) Relationship Violence Outreach, Intervention, and Community Education (R/VOICE) Center (CONFIDENTIAL)</div>
+      <p>Confidential support for students supported by sexual, relationship violence, harassment, stalking, and bias</p>
+      <p><a href="https://studentaffairs.psu.edu/r-voice" target="_blank" class="resource-link">https://studentaffairs.psu.edu/r-voice</a></p>
+      <p>(814) 863-2027</p>
+      <p>222U Boucke Building</p>
+    </div>
+    <div class="resource-box">
+      <div class="resource-title">3) Penn State Crisis Line (CONFIDENTIAL)</div>
+      <p>24/7 confidential service with licensed mental health counselors</p>
+      <p><a href="https://studentaffairs.psu.edu/counseling/crisis-intervention" target="_blank" class="resource-link">https://studentaffairs.psu.edu/counseling/crisis-intervention</a></p>
+      <p>(877) 229-6400 or text 'LIONS' to 741741</p>
+    </div>
+    <div class="resource-box">
+      <div class="resource-title">4) Student Legal Services</div>
+      <p>Free legal services, advice, referrals, and representation regarding many types of criminal, civil, and immigration matters</p>
+      <p><a href="https://studentaffairs.psu.edu/legalservices" target="_blank" class="resource-link">https://studentaffairs.psu.edu/legalservices</a></p>
+      <p>(814) 867-4388</p>
+      <p>248 Calder Way Suite 303<br>State College, PA 16801</p>
+    </div>
+    <div class="resource-box">
+      <div class="resource-title">5) Penn State Career Services</div>
+      <p>Free career counseling, resume reviews, referrals, and connection with employers</p>
+      <p><a href="https://studentaffairs.psu.edu/career" target="_blank" class="resource-link">https://studentaffairs.psu.edu/career</a></p>
+      <p>(814) 865-2377</p>
+      <p>101 Bank of America Career Services Building<br>566 Eisenhower Rd<br>University Park, PA 16802</p>
+    </div>
+  </div>
+  <p style="margin-top: 2rem; text-align: center;">
+    <strong>For more resources:</strong> <a href="https://redfolder.psu.edu/campus-resources/" target="_blank" class="resource-link">https://redfolder.psu.edu/campus-resources/</a>
+  </p>
+</section>
+
+<section id="transferable-skills">
+  <h2>Transferable Skills</h2>
+  <div class="strengths-container">
+    <div class="skill-box">
+      <div class="strength-title">Conflict Resolution</div>
+      <div class="skill-details">
+        <ul>
+          <li>Handling roommate conflicts, noise complaints, and incidents will strengthen my ability to stay neutral, mediate calmly, and guide residents toward solutions.</li>
+          <li>Navigating emotionally charged situations, especially with freshmen or students who have been written up, builds confidence in addressing conflict directly and professionally.</li>
+          <li>In software engineering, this can be transferred to managing disagreements on teams, resolving design or workflow conflicts, and collaborating effectively across different personalities.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="skill-box">
+      <div class="strength-title">Communication</div>
+      <div class="skill-details">
+        <ul>
+          <li>Running bi-semester ResChats and staying in regular contact with 40+ residents will sharpen my ability to communicate clearly and adapt to different communication styles.</li>
+          <li>Managing announcements, group chats, and floor meetings builds both professional and interpersonal communication under pressure.</li>
+          <li>These skills support engineering roles by improving team communication and clarity in documentation and code reviews.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="skill-box">
+      <div class="strength-title">Leadership</div>
+      <div class="skill-details">
+        <ul>
+          <li>Acting as the first responder in crisis situations and being the point of contact for residents builds decisiveness, composure, and responsibility.</li>
+          <li>Planning events, shaping community culture, and supporting residents through academic or personal challenges strengthens initiative and trust-based leadership.</li>
+          <li>This directly transfers to engineering by preparing me to lead projects, take ownership during high-pressure moments (like bugs or deadlines), and support teammates effectively.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="student-development">
+  <h2>Student Development Theory</h2>
+  <p><strong>Astin's Theory of Student Involvement</strong> helps me understand that residents grow the most when they invest energy into academics, relationships, and campus life, which I see when a resident who never attends events finally comes to a small CB like a game night or craft night and begins opening up. His focus on inputs reminds me that residents arrive with different backgrounds and expectations, which shapes how willing they are to get involved. By shaping the environment through inclusive, low-pressure programs, I can make involvement easier and more appealing.</p>
+  <p><strong>Tinto's Student Retention Theory</strong> shows that persistence depends heavily on academic and social integration, which I directly support by helping a struggling resident join an academic tutoring group and connect them with a mentor. I also try to greet residents by name whenever I see them for familiarity, connection, and a sense of belonging. In the future, I would like to introduce residents who have shared interests but haven't met yet and share campus events, club fairs, and involvement opportunities that they might like.</p>
 </section>
 
 
