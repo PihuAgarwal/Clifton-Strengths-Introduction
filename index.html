@@ -247,9 +247,35 @@
     }
 
     .resource-box p {
-      font-size: 0.75rem;
+      font-size: 0.80rem;
       margin: 0.3rem 0;
       line-height: 1.3;
+    }
+
+    .resource-image-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 215, 0, 0.1);
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 0.5rem;
+      margin: 0.3rem;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .resource-image-box:hover {
+      background: rgba(255, 215, 0, 0.2);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    }
+
+    .resource-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
     }
 
     .resources-grid {
@@ -298,7 +324,7 @@
 
 College, to me, is more than just assignments and exams. It’s about all the little moments of growth outside the classroom. As an RA, that means balancing challenges and support (like Sanford’s theory), whether it’s calming down a roommate squabble or cheering someone through homesickness.
 
-When I’m not on RA duty or coding away, you’ll probably catch me building Legos, dancing, or curled up with a good book. Basically, I like to keep my life equal parts creative, nerdy, and fun.</p>
+When I’m not on RA duty, you’ll probably catch me building Legos, dancing, or curled up with a good book. Basically, I like to keep my life equal parts creative, nerdy, and fun.</
       
     </div>
     <div class="intro-image">
@@ -430,6 +456,11 @@ When I’m not on RA duty or coding away, you’ll probably catch me building Le
 <section id="resources">
   <h2>Resources</h2>
   <div class="resources-grid">
+    <div class="resource-image-box" style="grid-column: 1; grid-row: 1;">
+      <a href="https://redfolder.psu.edu/campus-resources/" target="_blank">
+        <img src="red folder.png" alt="Red Folder Resources">
+      </a>
+    </div>
     <div class="resource-box" style="grid-column: 2; grid-row: 1;">
       <div class="resource-title">1) Counseling and Psychological Services (CAPS) (CONFIDENTIAL)</div>
       <p>Crisis, consultation, and counseling services</p>
@@ -463,6 +494,9 @@ When I’m not on RA duty or coding away, you’ll probably catch me building Le
       <p><a href="https://studentaffairs.psu.edu/career" target="_blank" class="resource-link">https://studentaffairs.psu.edu/career</a></p>
       <p>(814) 865-2377</p>
       <p>101 Bank of America Career Services Building<br>566 Eisenhower Rd<br>University Park, PA 16802</p>
+    </div>
+    <div class="resource-image-box" style="grid-column: 3; grid-row: 3;">
+      <img src="psu student logo.png" alt="PSU Student Logo">
     </div>
   </div>
   <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem;">
