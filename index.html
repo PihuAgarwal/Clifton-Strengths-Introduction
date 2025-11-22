@@ -181,6 +181,29 @@
       flex-shrink: 0;
     }
 
+    .intro-image-right {
+      flex-shrink: 0;
+      order: 2;
+    }
+
+    .intro-text-left {
+      flex: 1;
+      order: 1;
+    }
+
+    .challenge-image-large {
+      width: 300px;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      margin: 1rem 0 1rem auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .challenge-image-large:hover {
+      transform: rotate(-5deg) scale(1.05);
+    }
+
     .skill-box {
       background: rgba(255, 215, 0, 0.1);
       border: 2px solid #FFD700;
@@ -319,15 +342,15 @@
 <section id="intro">
   <h2>Introduction</h2>
   <div class="intro-container">
-    <div class="intro-text">
-      <p>Hey there! I’m Pihu Agarwal, a Computer Science major, RA in Robinson Hall, and certified sitcom binger (Friends is my comfort show, obviously). Even though I’m more of an introvert, I love helping people feel at home, which is exactly what being an RA lets me do. Sometimes it’s the quiet listeners who create the coziest spaces.
+    <div class="intro-text-left">
+      <p>Hey there! I'm Pihu Agarwal, a Computer Science major, RA in Robinson Hall, and certified sitcom binger (Friends is my comfort show, obviously). Even though I'm more of an introvert, I love helping people feel at home, which is exactly what being an RA lets me do. Sometimes it's the quiet listeners who create the coziest spaces.
 
-College, to me, is more than just assignments and exams. It’s about all the little moments of growth outside the classroom. As an RA, that means balancing challenges and support (like Sanford’s theory), whether it’s calming down a roommate squabble or cheering someone through homesickness.
+College, to me, is more than just assignments and exams. It's about all the little moments of growth outside the classroom. As an RA, that means balancing challenges and support (like Sanford's theory), whether it's calming down a roommate squabble or cheering someone through homesickness.
 
-When I’m not on RA duty, you’ll probably catch me building Legos, dancing, or curled up with a good book. Basically, I like to keep my life equal parts creative, nerdy, and fun.</
+When I'm not on RA duty, you'll probably catch me building Legos, dancing, or curled up with a good book. Basically, I like to keep my life equal parts creative, nerdy, and fun.</p>
       
     </div>
-    <div class="intro-image">
+    <div class="intro-image-right">
       <img src="pihu dress.jpg" alt="Pihu photo" class="friends-photo">
     </div>
   </div>
@@ -448,7 +471,7 @@ When I’m not on RA duty, you’ll probably catch me building Legos, dancing, o
       <p>On my first on-call shift, I found a drunk resident passed out in the bathroom. My Analytical side immediately wanted all the facts before acting, while Intellection made me overthink every decision rather than responding quickly. Harmony prevented me from "creating a scene," and Consistency had me worried about fair treatment rather than immediate safety. My Adaptability kept adjusting responses instead of following protocol. Fortunately, I overcame these paralysis moments by relying on my co-RA by using Harmony who helped me focus. We called campus police and the coordinator on call. The resident received proper medical attention, and everyone had a safe night.This taught me to not overthink and use my strengths to my advantage.</p>
     </div>
     <div class="intro-image">
-      <img src="emoji CB.jpg" alt="Emoji CB" class="friends-photo">
+      <img src="emoji CB.jpg" alt="Emoji CB" class="challenge-image-large">
     </div>
   </div>
 </section>
@@ -468,6 +491,9 @@ When I’m not on RA duty, you’ll probably catch me building Legos, dancing, o
       <p>(814) 863-0395</p>
       <p>501 Student Health Center</p>
     </div>
+    <div class="resource-image-box" style="grid-column: 3; grid-row: 1;">
+      <img src="CAPS.jpg" alt="CAPS">
+    </div>
     <div class="resource-box" style="grid-column: 1; grid-row: 2;">
       <div class="resource-title">2) Relationship Violence Outreach, Intervention, and Community Education (R/VOICE) Center (CONFIDENTIAL)</div>
       <p>Confidential support for students supported by sexual, relationship violence, harassment, stalking, and bias</p>
@@ -475,11 +501,8 @@ When I’m not on RA duty, you’ll probably catch me building Legos, dancing, o
       <p>(814) 863-2027</p>
       <p>222U Boucke Building</p>
     </div>
-    <div class="resource-box" style="grid-column: 2; grid-row: 2;">
-      <div class="resource-title">3) Penn State Crisis Line (CONFIDENTIAL)</div>
-      <p>24/7 confidential service with licensed mental health counselors</p>
-      <p><a href="https://studentaffairs.psu.edu/counseling/crisis-intervention" target="_blank" class="resource-link">https://studentaffairs.psu.edu/counseling/crisis-intervention</a></p>
-      <p>(877) 229-6400 or text 'LIONS' to 741741</p>
+    <div class="resource-image-box" style="grid-column: 2; grid-row: 2;">
+      <img src="psu student logo.png" alt="PSU Student Logo">
     </div>
     <div class="resource-box" style="grid-column: 3; grid-row: 2;">
       <div class="resource-title">4) Student Legal Services</div>
@@ -487,6 +510,12 @@ When I’m not on RA duty, you’ll probably catch me building Legos, dancing, o
       <p><a href="https://studentaffairs.psu.edu/legalservices" target="_blank" class="resource-link">https://studentaffairs.psu.edu/legalservices</a></p>
       <p>(814) 867-4388</p>
       <p>248 Calder Way Suite 303<br>State College, PA 16801</p>
+    </div>
+    <div class="resource-box" style="grid-column: 1; grid-row: 3;">
+      <div class="resource-title">3) Penn State Crisis Line (CONFIDENTIAL)</div>
+      <p>24/7 confidential service with licensed mental health counselors</p>
+      <p><a href="https://studentaffairs.psu.edu/counseling/crisis-intervention" target="_blank" class="resource-link">https://studentaffairs.psu.edu/counseling/crisis-intervention</a></p>
+      <p>(877) 229-6400 or text 'LIONS' to 741741</p>
     </div>
     <div class="resource-box" style="grid-column: 2; grid-row: 3;">
       <div class="resource-title">5) Penn State Career Services</div>
@@ -496,7 +525,7 @@ When I’m not on RA duty, you’ll probably catch me building Legos, dancing, o
       <p>101 Bank of America Career Services Building<br>566 Eisenhower Rd<br>University Park, PA 16802</p>
     </div>
     <div class="resource-image-box" style="grid-column: 3; grid-row: 3;">
-      <img src="psu student logo.png" alt="PSU Student Logo">
+      <img src="legal.png" alt="Legal Services">
     </div>
   </div>
   <p style="margin-top: 2rem; text-align: center; font-size: 0.9rem;">
